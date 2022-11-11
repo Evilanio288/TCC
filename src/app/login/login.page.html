@@ -1,0 +1,48 @@
+
+
+<ion-content color="secondary">
+  <div id="voltar">
+
+    <ion-router-link href="home">
+      <ion-button fill="clear"><ion-icon name="chevron-back-outline"></ion-icon>&nbsp;
+        </ion-button>
+  </ion-router-link>
+    </div>
+    <div id="cabeçalho3">
+      <ion-card-title><font face="impact" color="white"> <h1>Vamos Começar</h1></font></ion-card-title>
+</div>
+    <div id="cabeçalho">
+      <ion-card-title><h5>Se você não tiver uma conta, por favor <a href="criarumaconta">
+        cadastre-se</a> primeiro!</h5></ion-card-title>
+    </div>
+
+<div id="form">
+  <form #f="ngForm" (ngSubmit)="enviando(f)">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" ngModel name="email" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" ngModel name="password"></ion-input>
+    </ion-item>
+    <ion-router-link color="tertiary" href="vaga">
+    <ion-button expand="block" (click)="salvar">
+
+      <ion-icon slot="end" ></ion-icon>
+      Entrar
+
+  </ion-button>
+</ion-router-link>
+
+
+
+  </form>
+
+</div>
+<div id="senha">
+  <ion-router-link color="tertiary" href="esqueciasenha">
+  <ion-button>esqueci a senha</ion-button>
+</ion-router-link>
+</div>
+</ion-content>
